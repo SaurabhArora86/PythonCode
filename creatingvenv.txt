@@ -1,0 +1,34 @@
+### Create a folder
+### With that folder in Interminal type command: python -m venvy myenv
+### This creates a Virtual env with name myenv
+### This gets the copy of Python that is on local machine but not the packages installed via pip
+### To activate virtual env source myenv/bin/activate
+## Now you have a vrtual env
+## To deactivate type deactivate
+
+Sample commands
+
+➜  venv mkdir -p my_virtual
+➜  venv cd my_virtual 
+➜  my_virtual python -m venv myenv    
+➜  my_virtual source myenv/bin/activate
+(myenv) ➜  my_virtual 
+
+Now to share the packages installed in venv
+(myenv) ➜  my_virtual pip install pandas==1.5.0
+
+
+pip freeze is to get all packages installed
+pip freeze > requirements.txt
+
+Another person can isntall packages using below command
+pip install -r requirements.txt
+
+Steps overall
+1. Other person creates a virtual env using
+python -m venv new_env
+2. Source the virtual env
+source new_env/bin/activate
+3. Install required packages (that is shared)
+python -r requirements.txt
+

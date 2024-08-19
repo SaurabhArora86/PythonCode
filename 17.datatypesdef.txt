@@ -1,0 +1,12 @@
+datat types:
+Numeric - int, float, complex
+String
+Boolean - True, False
+Sequenced - list, tuple
+    Eg: [1,2,[-3,4],["banana","orange"]]
+    (1,2,(3,4))
+Mapped data: Dictionary
+    Eg: {"name": "Saurabh", "age":36}
+No Sequenced:
+    Set
+

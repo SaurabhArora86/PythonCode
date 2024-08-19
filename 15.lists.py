@@ -37,3 +37,9 @@ print(matrix[0][2])
 for row in matrix:
     for item in row:
         print(item)
+
+
+# List comprehension
+
+list1 = [i*i for i in range(4)]
+print(list1)

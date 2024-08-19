@@ -25,3 +25,9 @@ param1 = input('''
                What is your pincode
                ''')
 print(param1)
+
+a = input()
+print(a)
+
+# a = input("Enter Name: ")
+# print("Your name is", a)

@@ -62,3 +62,16 @@ else:
 # while "y" in value.split():
 #     print("y")
 #     y = y+1
+
+
+# Another example
+
+budget = 220
+apple_price = 210
+
+if (budget < apple_price):
+    print("Not able to Buy")
+elif (budget == apple_price):
+    print("Budget would be lost")
+else:
+    print("Buying apples")
