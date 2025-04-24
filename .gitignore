@@ -1,0 +1,22 @@
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Ignore virtual environments
+kitty_env/
+project_kitty/kitty_env/
+**/kitty_env/
+
+# Ignore Python virtual environment config
+pyvenv.cfg
+
+# Ignore package folders (e.g., site-packages)
+site-packages/
+
+# (Optional) Ignore logs and temp files
+*.log
+*.tmp
+*.swp
+*.bak
+

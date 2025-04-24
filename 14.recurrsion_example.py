@@ -12,3 +12,14 @@ def factorial(n):
 
 
 print(factorial(4))
+
+
+def factor(n):
+    if n == 1:
+        return 1
+    else:
+        y = n * factor(n-1)
+    return (y)
+
+
+print(factor(5))

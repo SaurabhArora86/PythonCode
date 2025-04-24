@@ -36,6 +36,20 @@ if measurement == "K" or measurement == 'k':
 elif measurement == "L" or measurement == 'l':
     print("Your weight is " + weight, measurement)
 
+a = int(input("Enter your age: "))
+
+if a == 0:
+    print(f'Entered age is {a} which is not valid')
+elif (a < 0):
+    print(f'Entered age is  {a} which is not valid again')
+elif (a > 45):
+    if (a > 60):
+        print(f'Entered age is {a} which is a valid age but you are old')
+    else:
+        print(f'Entered age is {a} which is not that old')
+else:
+    print("You are Young")
+
 
 # while
 
@@ -44,6 +58,7 @@ while i <= 3:
     print("Value is " + str(i))
     i = i+1
 
+print(i)
 
 i = 1
 while i <= 3:

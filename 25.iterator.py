@@ -5,6 +5,9 @@ my_iter = iter(name)
 for item in my_iter:
     print(item)
 
+for items in name:
+    print(items)
+
 # ANother way is using next(), note: for loop creators an iterator object and executes next() method
 
 my_iter = iter(name)

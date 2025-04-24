@@ -29,5 +29,10 @@
 
 # To overcome it, use if __name__ == "main" in imported module
 # Eg below
+import example
 import saurabh
 saurabh.greet("Saurabh")
+
+# another_script.py
+
+example.greet()

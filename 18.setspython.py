@@ -1,18 +1,23 @@
 '''
 List - allow duplicates, ordered and addition, removal and change possible
 []
-Tupple - immutable (no change allowed, cannot add or delete), ordered and duplicates allowed
-    immutable and ordered
+Tuple - immutable (no change allowed, cannot add or delete), ordered and duplicates allowed
+    immutable and ordered and duplicates allowed
 ()
-Set - unique values but addition and removal allowed, no duplicates and ordered
-    unique and unordered
+Set - unique values but addition and removal allowed, no duplicates and unordered
+    unique and unordered. You canot change the values in set
 {}
-Dictionary - Key, value pair
+Dictionary - Key, value pair, cannot be indexed, no duplicates allowed in keys
 {}
+
+Mutable - List, set and Dictionary
+Immutable - Tuple, String
+
+Set = {1,2,[3,4]} Not allowed since set cannot have list inside it as list is mutable but set is immutable
+NOTE: sets are not indexed so you cannot access the values using index means set[0] is not allowed
 '''
 
 # list to set
-
 my_list = [1, 2, 4, 3, 5, 1, 2, 3, 45]
 
 my_set = set(my_list)
@@ -26,7 +31,7 @@ print(set1)
 set1.remove(10)
 print(set1)
 
-# pop removes the first element from set but the catch is set is unordered so it becomes random
+# pop removes the first element from set but the catch is, set is unordered so it becomes random
 set1.pop()
 print(set1)
 
@@ -43,13 +48,15 @@ print(type(p))
 
 # union and update
 # union and update both updates the set with value of 2nd set but union returns a new set where as update, updates an existing set
-
+print("\n**********Union and Update**********")
 s1 = {2, 3, 4, 5, 3}
 s2 = {2, 7, 8, 9}
 print(s1, s2, s1.union(s2))
-print(s1.update(s2))
 print(s1)
+print(s2.update(s1))
+print(s2)
 
+print("\n**********")
 # Intersection and Intersection update is same in terms of updating an existing set or new set
 s1 = {2, 3, 4, 5, 3}
 s2 = {2, 7, 8, 9}
@@ -65,6 +72,7 @@ print(s1, s2, s1.difference(s2))
 print(s1.difference_update(s2))
 print(s1)
 
+print("\n**********Remove and Discard**********")
 # remove()/discard() is used to remove values from set
 # difference is - remove will raise an error if the value is not present where as discard wont raise an error
 s1 = {2, 3, 4, 5, 3}

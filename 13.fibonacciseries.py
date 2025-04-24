@@ -4,8 +4,9 @@ The Fibonacci series is the sequence of numbers (also called Fibonacci numbers),
 Given the first term, F0 and second term, F1 as '0' and '1' respectively, the third term here can be given as, F2 = 0 + 1 = 1
 
 Similarly,
-
-F3 = 1 + 1 = 2
+F1 =1
+F2 = 1
+F3 = 1 + 1 = 2 (F1 + F2)
 F4 = 2 + 1 = 3
 F5 = 2 + 3 = 5
 F6 = 3 + 5 = 8

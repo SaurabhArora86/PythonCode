@@ -36,3 +36,29 @@ t1.join()
 t2.join()
 time3 = time.perf_counter()
 print(time3 - time1)
+
+# Another example
+
+print("***ANother example***")
+
+
+def print_num():
+    for i in range(1, 6):
+        print(i)
+        time.sleep(1)
+
+
+def print_let():
+    for i in "ABCDE":
+        print(i)
+        time.sleep(1.5)
+
+
+t3 = threading.Thread(target=print_num)
+t4 = threading.Thread(target=print_let)
+
+t3.start()
+t4.start()
+
+t3.join()
+t4.join()

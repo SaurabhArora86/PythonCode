@@ -1,7 +1,8 @@
 import random
 
 
-def x(a, b): return a*b
+def x(a, b):
+    return a*b
 
 
 print(x(10, 20))
@@ -33,3 +34,12 @@ def avg(x, y): return (x+y)/2
 
 
 print(avg(2, 3))
+
+# In lambda terms
+# avg = lambda x,y: (x+y)/2
+
+# print(avg(2, 3))
+
+# for i in range(1,6):
+#     x = lambda i: i^2
+#     print(x)
